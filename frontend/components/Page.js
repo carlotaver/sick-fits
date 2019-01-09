@@ -4,7 +4,7 @@ import styled, { ThemeProvider, injectGlobal } from "styled-components";
 import Meta from "./Meta";
 import Header from "./Header";
 
-const theme = {
+const defaultTheme = {
   red: "#FFOOOO",
   black: "#393939",
   grey: "#3A3A3A",
@@ -28,11 +28,11 @@ const Inner = styled.div`
 class Page extends React.Component {
   render() {
     return (
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={defaultTheme}>
         <StyledPage>
           <Meta />
           <Header />
-          <Inner>{this.props.childern}</Inner>
+          <Inner>{this.props.children}</Inner>
         </StyledPage>
       </ThemeProvider>
     );
