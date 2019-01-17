@@ -756,7 +756,6 @@ enum MutationType {
   DELETED
 }
 
-"""An object with an ID"""
 interface Node {
   """The id of the object."""
   id: ID!
@@ -1525,7 +1524,7 @@ input OrderWhereUniqueInput {
   id: ID
 }
 
-"""Information about pagination in a connection."""
+
 type PageInfo {
   """When paginating forwards, are there more items?"""
   hasNextPage: Boolean!
