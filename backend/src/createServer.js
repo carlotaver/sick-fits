@@ -7,7 +7,7 @@ const db = require("./db");
 
 function createServer() {
   return new GraphQlServer({
-    typeDefs: 'src/shema.graphql',
+    typeDefs: "src/schema.graphql",
     resolvers: {
       Mutation,
       Query
